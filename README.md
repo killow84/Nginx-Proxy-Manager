@@ -48,12 +48,12 @@ services:
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
-
+```
 networks:
   default:
     external:
       name: nginxproxyman
-      ```
+      
 Nginx Proxy Manager listens on ports 80 and 443 for HTTP and HTTPS traffic, respectively. Port 81 provides access to the web management dashboard. To tighten server security, change the management port to a random combination.
 Save and close the file.
 Switch to the Nginx Proxy Manager directory.
